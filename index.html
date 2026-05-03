@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Las Dos Bicicletas — Taller de bicicletas en La Cisterna. Mantención profesional, precios claros, agenda por WhatsApp." />
+  <title>Las Dos Bicicletas | Taller de Bicicletas — La Cisterna</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-favicon.png" />
+  <!-- Estilos propios -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark ldb-navbar fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">
+      <img src="assets/images/logo-navbar.png" alt="Las Dos Bicicletas" class="brand-logo" />
+      <span class="brand-text">Las Dos Bicicletas</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo funciona</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trabajos">Trabajos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-wa-nav" href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp me-1"></i>Agendar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero-section" id="inicio">
+  <div class="hero-bg-texture"></div>
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100 py-5">
+      <div class="col-lg-7 py-5">
+        <div class="hero-badge animate-fade-up">
+          <i class="bi bi-geo-alt-fill me-1"></i> La Cisterna, Santiago
+        </div>
+        <h1 class="hero-title animate-fade-up delay-1">
+          Tu bicicleta<br />
+          <span class="text-red">en óptimas<br />condiciones.</span>
+        </h1>
+        <p class="hero-subtitle animate-fade-up delay-2">
+          Taller especializado en mantención y reparación de bicicletas. Atención profesional, precios claros y agenda rápida por WhatsApp.
+        </p>
+        <div class="hero-ctas animate-fade-up delay-3">
+          <a href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n" target="_blank" rel="noopener" class="btn btn-primary-ldb btn-lg me-2 mb-2">
+            <i class="bi bi-whatsapp me-2"></i>Agenda por WhatsApp
+          </a>
+          <a href="#servicios" class="btn btn-outline-ldb btn-lg mb-2">
+            Ver servicios <i class="bi bi-arrow-down ms-1"></i>
+          </a>
+        </div>
+        <div class="hero-trust animate-fade-up delay-4">
+          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Sin costo de agenda</span>
+          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Presupuesto gratis</span>
+          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Atención personalizada</span>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+        <div class="hero-visual">
+          <div class="hero-ring"></div>
+          <div class="hero-icon-wrap">
+            <img src="assets/images/logo-hero.png" alt="Las Dos Bicicletas" class="hero-logo-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <i class="bi bi-chevron-double-down"></i>
+  </div>
+</section>
+
+<!-- ========== FRANJA CONFIANZA ========== -->
+<section class="trust-strip py-4">
+  <div class="container">
+    <div class="row g-3 text-center">
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <i class="bi bi-person-check-fill trust-icon"></i>
+          <span>Atención personalizada</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <i class="bi bi-tag-fill trust-icon"></i>
+          <span>Precios claros</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <i class="bi bi-shop-window trust-icon"></i>
+          <span>Taller físico</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="trust-item">
+          <i class="bi bi-tools trust-icon"></i>
+          <span>Servicio especializado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICIOS ========== -->
+<section class="section-ldb py-6" id="servicios">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-label">Lo que hacemos</span>
+      <h2 class="section-title">Nuestros <span class="text-red">servicios</span></h2>
+      <p class="section-sub">Trabajamos con todo tipo de bicicletas. Revisa nuestros servicios y precios.</p>
+    </div>
+    <!-- CATEGORÍA: MANTENCIONES -->
+    <div class="col-12 mb-2">
+      <h4 class="services-category-title"><i class="bi bi-bicycle me-2 text-red"></i>Mantenciones</h4>
+    </div>
+
+    <div class="row g-4 w-100 mx-0" id="servicios-grid">
+
+      <!-- Mantención Full Pro -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-bicycle"></i></div>
+          <div class="service-badge service-badge-top">🏆 Premium</div>
+          <h3 class="service-name">Mantención Full Pro</h3>
+          <p class="service-desc">Todo lo de la Full más sangrado de frenos hidráulicos. La mantención más completa del taller.</p>
+          <ul class="service-includes">
+            <li>Diagnóstico y desarme completo</li>
+            <li>Lavado de bicicleta y piezas</li>
+            <li>Cambio de cables, fundas frenos y cambios</li>
+            <li>Engrase y cambio de rodamientos</li>
+            <li>Limpieza y descontaminación discos</li>
+            <li>Centrado de ruedas</li>
+            <li>Sangrado de frenos hidráulicos</li>
+          </ul>
+          <div class="service-price">$39.900</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20me%20interesa%20la%20Mantenci%C3%B3n%20Full%20Pro%20%28%2439.900%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Mantención Full -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-bicycle"></i></div>
+          <div class="service-badge service-badge-top">⭐ Más popular</div>
+          <h3 class="service-name">Mantención Full</h3>
+          <p class="service-desc">Mantención completa para dejar tu bici en óptimas condiciones de seguridad y rendimiento.</p>
+          <ul class="service-includes">
+            <li>Diagnóstico y desarme completo</li>
+            <li>Lavado de bicicleta y piezas</li>
+            <li>Cambio de cables y fundas frenos/cambios</li>
+            <li>Engrase y cambio de rodamientos (mazas, dirección, motor)</li>
+            <li>Limpieza y descontaminación de discos y pastillas</li>
+            <li>Rectificación de postiza</li>
+            <li>Centrado de ruedas</li>
+          </ul>
+          <div class="service-price">$29.900</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20me%20interesa%20la%20Mantenci%C3%B3n%20Full%20%28%2429.900%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Mantención Light -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-wrench-adjustable"></i></div>
+          <h3 class="service-name">Mantención Light</h3>
+          <p class="service-desc">Mantención esencial para mantener tu bici rodando bien día a día.</p>
+          <ul class="service-includes">
+            <li>Lavado de bicicleta</li>
+            <li>Cambio piolas frenos y cambios</li>
+            <li>Lavado y lubricación de transmisión</li>
+          </ul>
+          <div class="service-price">$15.900</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20me%20interesa%20la%20Mantenci%C3%B3n%20Light%20%28%2415.900%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- CATEGORÍA: FRENOS Y CAMBIOS -->
+      <div class="col-12 mt-3 mb-2">
+        <h4 class="services-category-title"><i class="bi bi-disc me-2 text-red"></i>Frenos y cambios</h4>
+      </div>
+
+      <!-- Regulación de frenos -->
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-disc"></i></div>
+          <h3 class="service-name">Regulación de Frenos</h3>
+          <p class="service-desc">Ajuste preciso de frenos para máxima seguridad en cada frenada.</p>
+          <div class="service-price">$7.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20regulaci%C3%B3n%20de%20frenos%20%28%247.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Regulación de cambios -->
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3 class="service-name">Regulación de Cambios</h3>
+          <p class="service-desc">Calibración del sistema de cambios para que cada marcha entre suave y preciso.</p>
+          <div class="service-price">$7.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20regulaci%C3%B3n%20de%20cambios%20%28%247.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Regulación cambios y frenos con cables -->
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-tools"></i></div>
+          <h3 class="service-name">Reg. Cambios y Frenos + Cables</h3>
+          <p class="service-desc">Regulación completa de frenos y cambios con cables y fundas nuevas incluidas.</p>
+          <div class="service-price">$15.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20regulaci%C3%B3n%20de%20cambios%20y%20frenos%20con%20cables%20nuevos%20%28%2415.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Sangrado de frenos hidráulicos -->
+      <div class="col-sm-6 col-lg-3 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-droplet-fill"></i></div>
+          <h3 class="service-name">Sangrado de Frenos Hidráulicos</h3>
+          <p class="service-desc">Purga del sistema hidráulico para recuperar la potencia y precisión de frenado.</p>
+          <div class="service-price">$20.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20sangrado%20de%20frenos%20hidr%C3%A1ulicos%20%28%2420.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- CATEGORÍA: RUEDAS -->
+      <div class="col-12 mt-3 mb-2">
+        <h4 class="services-category-title"><i class="bi bi-arrow-repeat me-2 text-red"></i>Ruedas</h4>
+      </div>
+
+      <!-- Centrado de ruedas -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-arrow-repeat"></i></div>
+          <h3 class="service-name">Centrado de Ruedas</h3>
+          <p class="service-desc">Corrección del alabeo lateral y radial para una rodada suave y segura.</p>
+          <div class="service-price">desde $6.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20centrado%20de%20ruedas%20%28desde%20%246.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Enrayado -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-asterisk"></i></div>
+          <h3 class="service-name">Enrayado de Ruedas</h3>
+          <p class="service-desc">Armado y tensado de rueda con rayos nuevos o existentes. Trabajo de precisión garantizado.</p>
+          <div class="service-price">$20.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20enrayado%20de%20ruedas%20%28%2420.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- CATEGORÍA: LIMPIEZA Y OTROS -->
+      <div class="col-12 mt-3 mb-2">
+        <h4 class="services-category-title"><i class="bi bi-droplet me-2 text-red"></i>Limpieza y otros servicios</h4>
+      </div>
+
+      <!-- Limpieza engrase juego de dirección -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-gear-fill"></i></div>
+          <h3 class="service-name">Limpieza y Engrase Juego de Dirección</h3>
+          <p class="service-desc">Limpieza, engrase y cambio de rodamientos del juego de dirección para una dirección suave.</p>
+          <div class="service-price">$7.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20limpieza%20y%20engrase%20de%20direcci%C3%B3n%20%28%247.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Mantención horquilla -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-bicycle"></i></div>
+          <h3 class="service-name">Mantención Básica Horquilla</h3>
+          <p class="service-desc">Mantención básica para horquillas de suspensión de gama media. Alarga la vida útil de tu horquilla.</p>
+          <div class="service-price">$25.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20mantenci%C3%B3n%20de%20horquilla%20%28%2425.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- Lavado full transmisión -->
+      <div class="col-sm-6 col-lg-4 d-flex">
+        <div class="service-card flex-fill">
+          <div class="service-icon-wrap"><i class="bi bi-droplet-half"></i></div>
+          <h3 class="service-name">Lavado Full Transmisión</h3>
+          <p class="service-desc">Servicio de lavado completo de transmisión, incluye piola de cambio y lubricación.</p>
+          <div class="service-price">$10.000</div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20necesito%20lavado%20full%20de%20transmisi%C3%B3n%20%28%2410.000%29.%20%C2%BFTienen%20disponibilidad%3F" target="_blank" rel="noopener" class="btn btn-service-wa w-100 mt-auto">
+            <i class="bi bi-whatsapp me-1"></i>Consultar
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA card -->
+      <div class="col-12 d-flex mt-2">
+        <div class="service-card service-card-cta flex-fill d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-4">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-chat-dots-fill cta-card-icon"></i>
+            <div>
+              <h3 class="mb-1">¿No encontraste lo que buscas?</h3>
+              <p class="mb-0 opacity-75">Escríbenos y te cotizamos sin costo. Trabajamos con todo tipo de bicicletas.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20tengo%20una%20consulta%20sobre%20mi%20bicicleta." target="_blank" rel="noopener" class="btn btn-primary-ldb btn-lg flex-shrink-0">
+            <i class="bi bi-whatsapp me-2"></i>Consultar gratis
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CÓMO FUNCIONA ========== -->
+<section class="section-ldb section-dark py-6" id="como-funciona">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-label section-label-light">Simple y rápido</span>
+      <h2 class="section-title text-white">¿Cómo <span class="text-red">funciona?</span></h2>
+      <p class="section-sub text-white-50">Agendar es fácil. En 3 pasos tu bici está en nuestras manos.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="step-card text-center">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <h3 class="step-title">Escríbenos</h3>
+          <p class="step-desc">Mándanos un WhatsApp con tu nombre y cuéntanos qué le pasa a tu bici. Sin formularios complicados.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card text-center">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">
+            <i class="bi bi-bicycle"></i>
+          </div>
+          <h3 class="step-title">Cuéntanos qué necesita</h3>
+          <p class="step-desc">Te respondemos rápido con un diagnóstico y el precio del servicio. Todo claro antes de confirmar.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card text-center">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">
+            <i class="bi bi-calendar-check"></i>
+          </div>
+          <h3 class="step-title">Agenda tu visita</h3>
+          <p class="step-desc">Coordinamos día y hora. Traes tu bici al taller y nosotros nos encargamos del resto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n%20para%20mi%20bicicleta." target="_blank" rel="noopener" class="btn btn-primary-ldb btn-lg">
+        <i class="bi bi-whatsapp me-2"></i>Empezar ahora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALERÍA TRABAJOS ========== -->
+<section class="section-ldb py-6" id="trabajos">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-label">Nuestro trabajo</span>
+      <h2 class="section-title">Antes <span class="text-red">y después</span></h2>
+      <p class="section-sub">Cada bici que pasa por nuestro taller sale lista para rodar.</p>
+    </div>
+    <div class="row g-3">
+
+      <!-- Foto 1 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-1.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-1.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-2.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-2.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-3.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-3.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+      <!-- Foto 4 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-4.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-4.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+      <!-- Foto 5 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-5.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-5.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+      <!-- Foto 6 -->
+      <div class="col-6 col-md-4">
+        <div class="gallery-item">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-6.jpg" ...> -->
+          <div class="gallery-placeholder">
+            <i class="bi bi-image"></i>
+            <span>antes-despues-6.jpg</span>
+          </div>
+          <div class="gallery-label">Antes y después</div>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-center mt-4">
+      <a href="https://instagram.com/lasdosbicicletasspa" target="_blank" rel="noopener" class="ig-gallery-link">
+        <i class="bi bi-instagram me-2"></i>Ver más trabajos en @lasdosbicicletasspa
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIOS ========== -->
+<section class="section-ldb section-gray py-6" id="testimonios">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-label">Lo que dicen</span>
+      <h2 class="section-title">Clientes <span class="text-red">satisfechos</span></h2>
+      <p class="section-sub">Conversaciones reales de nuestros clientes.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Pantallazo 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="screenshot-card">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-1.jpg" ...> -->
+          <div class="screenshot-placeholder">
+            <i class="bi bi-chat-left-text"></i>
+            <span>testimonio-1.jpg</span>
+            <small>Pantallazo de WhatsApp o Instagram</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantallazo 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="screenshot-card">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-2.jpg" ...> -->
+          <div class="screenshot-placeholder">
+            <i class="bi bi-chat-left-text"></i>
+            <span>testimonio-2.jpg</span>
+            <small>Pantallazo de WhatsApp o Instagram</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantallazo 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="screenshot-card">
+          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-3.jpg" ...> -->
+          <div class="screenshot-placeholder">
+            <i class="bi bi-chat-left-text"></i>
+            <span>testimonio-3.jpg</span>
+            <small>Pantallazo de WhatsApp o Instagram</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== UBICACIÓN Y HORARIOS ========== -->
+<section class="section-ldb py-6" id="ubicacion">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <span class="section-label">Encuéntranos</span>
+      <h2 class="section-title">Dónde <span class="text-red">estamos</span></h2>
+    </div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5 order-lg-2">
+        <div class="location-info-card">
+          <div class="location-block">
+            <i class="bi bi-geo-alt-fill text-red me-2"></i>
+            <div>
+              <strong>Dirección</strong>
+              <p class="mb-0">Av. El Parrón 0516<br />La Cisterna, Santiago</p>
+            </div>
+          </div>
+          <hr class="my-3" />
+          <div class="location-block">
+            <i class="bi bi-clock-fill text-red me-2"></i>
+            <div>
+              <strong>Horarios</strong>
+              <p class="mb-1">Lunes a viernes: 10:00 – 18:00</p>
+              <p class="mb-0">Sábado: 10:00 – 14:00</p>
+            </div>
+          </div>
+          <hr class="my-3" />
+          <div class="location-block">
+            <i class="bi bi-whatsapp text-red me-2"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <p class="mb-0">+56 9 9862 5113</p>
+            </div>
+          </div>
+          <hr class="my-3" />
+          <div class="location-block">
+            <i class="bi bi-instagram text-red me-2"></i>
+            <div>
+              <strong>Instagram</strong>
+              <p class="mb-0">@lasdosbicicletasspa</p>
+            </div>
+          </div>
+          <a href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n." target="_blank" rel="noopener" class="btn btn-primary-ldb w-100 mt-4">
+            <i class="bi bi-whatsapp me-2"></i>Agendar por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-7 order-lg-1">
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.0!2d-70.6614!3d-33.5279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c3dc48e0f72b%3A0x5a62c50e73c6b793!2sAv.%20El%20Parr%C3%B3n%200516%2C%20La%20Cisterna!5e0!3m2!1ses!2scl!4v1699000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Las Dos Bicicletas">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer-ldb py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="footer-brand mb-3">
+          <img src="assets/images/logo-footer.png" alt="Las Dos Bicicletas" class="footer-logo" />
+          <span class="brand-text">Las Dos Bicicletas</span>
+        </div>
+        <p class="footer-tagline">Taller especializado en mantención y reparación de bicicletas en La Cisterna.</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="footer-heading">Contacto</h5>
+        <ul class="footer-list">
+          <li><i class="bi bi-whatsapp text-red me-2"></i><a href="https://wa.me/56998625113" target="_blank">+56 9 9862 5113</a></li>
+          <li>
+            <a href="https://instagram.com/lasdosbicicletasspa" target="_blank" rel="noopener" class="footer-ig-link">
+              <i class="bi bi-instagram footer-ig-icon me-2"></i>
+              <span>@lasdosbicicletasspa</span>
+            </a>
+          </li>
+          <li><i class="bi bi-geo-alt-fill text-red me-2"></i>Av. El Parrón 0516, La Cisterna</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="footer-heading">Horarios</h5>
+        <ul class="footer-list">
+          <li><i class="bi bi-dot text-red me-1"></i>Lun – Vie: 10:00 – 18:00</li>
+          <li><i class="bi bi-dot text-red me-1"></i>Sábado: 10:00 – 14:00</li>
+          <li><i class="bi bi-dot text-red me-1"></i>Domingo: Cerrado</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider mt-4 mb-3" />
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="footer-copy mb-0">© 2025 Las Dos Bicicletas. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6 text-md-end mt-2 mt-md-0">
+        <a href="#inicio" class="footer-back-top"><i class="bi bi-arrow-up-circle me-1"></i>Volver arriba</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
+<a href="https://wa.me/56998625113?text=Hola%2C%20vi%20su%20web%20y%20quiero%20consultar%20sobre%20mis%20bicicleta." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  <span class="wa-float-pulse"></span>
+</a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS propio -->
+<script src="js/main.js"></script>
+</body>
+</html>

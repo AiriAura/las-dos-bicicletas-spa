@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acceso — Las Dos Bicicletas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="css/admin.css" rel="stylesheet" />
+</head>
+<body class="login-body">
+
+<div class="login-wrapper">
+  <div class="login-card">
+    <div class="login-brand mb-4">
+      <span class="brand-icon">🚲</span>
+      <span class="brand-text">Las Dos Bicicletas</span>
+    </div>
+    <h1 class="login-title">Acceso al Taller</h1>
+    <p class="login-sub">Solo para uso interno del equipo.</p>
+
+    <div id="login-error" class="alert alert-danger d-none small py-2" role="alert"></div>
+
+    <div class="mb-3">
+      <label class="form-label admin-label">Correo electrónico</label>
+      <input type="email" id="login-email" class="form-control admin-input" placeholder="tu@correo.com" autocomplete="email" />
+    </div>
+    <div class="mb-4">
+      <label class="form-label admin-label">Contraseña</label>
+      <input type="password" id="login-password" class="form-control admin-input" placeholder="••••••••" autocomplete="current-password" />
+    </div>
+    <button id="login-btn" class="btn btn-primary-admin w-100 py-2">
+      <span id="login-text"><i class="bi bi-lock-fill me-2"></i>Entrar</span>
+      <span id="login-loading" class="d-none spinner-border spinner-border-sm"></span>
+    </button>
+    <div class="text-center mt-3">
+      <a href="index.html" class="text-muted small">← Ver sitio público</a>
+    </div>
+  </div>
+</div>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script>
+  // Si ya está logueado, redirige
+  auth.onAuthStateChanged(user => {
+    if (user) window.location.href = 'admin.html';
+  });
+
+  document.getElementById('login-btn').addEventListener('click', async () => {
+    const email = document.getElementById('login-email').value.trim();
+    const pass  = document.getElementById('login-password').value;
+    const errEl  = document.getElementById('login-error');
+    const txt    = document.getElementById('login-text');
+    const spin   = document.getElementById('login-loading');
+
+    errEl.classList.add('d-none');
+    txt.classList.add('d-none');
+    spin.classList.remove('d-none');
+
+    try {
+      await auth.signInWithEmailAndPassword(email, pass);
+      window.location.href = 'admin.html';
+    } catch (err) {
+      errEl.textContent = 'Correo o contraseña incorrectos.';
+      errEl.classList.remove('d-none');
+    } finally {
+      txt.classList.remove('d-none');
+      spin.classList.add('d-none');
+    }
+  });
+
+  // Enter para login
+  document.getElementById('login-password').addEventListener('keypress', e => {
+    if (e.key === 'Enter') document.getElementById('login-btn').click();
+  });
+</script>
+</body>
+</html>
