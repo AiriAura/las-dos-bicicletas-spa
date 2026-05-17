@@ -3,15 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Las Dos Bicicletas — Taller de bicicletas en La Cisterna. Mantención profesional, precios claros, agenda por WhatsApp." />
-  <title>Las Dos Bicicletas | Taller de Bicicletas — La Cisterna</title>
+  <meta name="description" content="Taller de bicicletas en La Cisterna, Santiago. Mantención, reparación y ajuste profesional. Agenda rápida por WhatsApp. Precios claros sin sorpresas." />
+  <meta name="keywords" content="taller bicicletas la cisterna, mantención bicicletas santiago, reparación bicicletas la cisterna, taller bici santiago sur, mantención MTB santiago" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Las Dos Bicicletas | Taller en La Cisterna" />
+  <meta property="og:description" content="Mantención y reparación profesional de bicicletas en La Cisterna. Agenda por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <title>Las Dos Bicicletas | Taller de Bicicletas en La Cisterna, Santiago</title>
+
+  <!-- Schema Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Las Dos Bicicletas",
+    "description": "Taller especializado en mantención y reparación de bicicletas en La Cisterna, Santiago.",
+    "telephone": "+56998625113",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. El Parrón 0516",
+      "addressLocality": "La Cisterna",
+      "addressRegion": "Región Metropolitana",
+      "addressCountry": "CL"
+    },
+    "openingHours": ["Mo-Fr 10:00-18:00", "Sa 10:00-14:00"],
+    "priceRange": "$$",
+    "sameAs": ["https://instagram.com/lasdosbicicletasspa"]
+  }
+  </script>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts — cambiado a Oswald + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/logo-favicon.png" />
   <!-- Estilos propios -->
@@ -47,21 +73,46 @@
 
 <!-- ========== HERO ========== -->
 <section class="hero-section" id="inicio">
-  <div class="hero-bg-texture"></div>
+  <!-- Fondo: reemplaza con foto real del taller → assets/images/hero-bg.jpg -->
+  <div class="hero-bg-photo"></div>
+  <div class="hero-bg-overlay"></div>
   <div class="container hero-content">
     <div class="row align-items-center min-vh-100 py-5">
-      <div class="col-lg-7 py-5">
+      <div class="col-lg-8 py-5">
         <div class="hero-badge animate-fade-up">
-          <i class="bi bi-geo-alt-fill me-1"></i> La Cisterna, Santiago
+          <i class="bi bi-geo-alt-fill me-1"></i> Taller físico en La Cisterna, Santiago
         </div>
         <h1 class="hero-title animate-fade-up delay-1">
-          Tu bicicleta<br />
-          <span class="text-red">en óptimas<br />condiciones.</span>
+          Mantención y reparación<br />
+          <span class="text-red">de bicicletas</span><br />
+          en La Cisterna
         </h1>
         <p class="hero-subtitle animate-fade-up delay-2">
-          Taller especializado en mantención y reparación de bicicletas. Atención profesional, precios claros y agenda rápida por WhatsApp.
+          Atención profesional, precios claros y agenda rápida por WhatsApp.<br class="d-none d-md-block" />
+          Te explicamos todo antes de trabajar. Sin sorpresas.
         </p>
-        <div class="hero-ctas animate-fade-up delay-3">
+
+        <!-- Prueba social -->
+        <div class="hero-social-proof animate-fade-up delay-3">
+          <div class="proof-item">
+            <span class="proof-number">+300</span>
+            <span class="proof-label">Bicicletas reparadas</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">⭐ 5.0</span>
+            <span class="proof-label">Atención personalizada</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">
+              <i class="bi bi-shop-window" style="font-size:1.1rem"></i>
+            </span>
+            <span class="proof-label">Taller físico propio</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas animate-fade-up delay-4">
           <a href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n" target="_blank" rel="noopener" class="btn btn-primary-ldb btn-lg me-2 mb-2">
             <i class="bi bi-whatsapp me-2"></i>Agenda por WhatsApp
           </a>
@@ -70,16 +121,16 @@
           </a>
         </div>
         <div class="hero-trust animate-fade-up delay-4">
-          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Sin costo de agenda</span>
+          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Diagnóstico honesto</span>
           <span><i class="bi bi-check-circle-fill text-red me-1"></i>Presupuesto gratis</span>
-          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Atención personalizada</span>
+          <span><i class="bi bi-check-circle-fill text-red me-1"></i>Sin costo de agenda</span>
         </div>
       </div>
-      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+      <div class="col-lg-4 d-none d-lg-flex justify-content-center">
         <div class="hero-visual">
           <div class="hero-ring"></div>
           <div class="hero-icon-wrap">
-            <img src="assets/images/logo-hero.png" alt="Las Dos Bicicletas" class="hero-logo-img" />
+            <img src="assets/images/logo-hero.png" alt="Las Dos Bicicletas" class="hero-logo-img" loading="eager" />
           </div>
         </div>
       </div>
@@ -96,26 +147,26 @@
     <div class="row g-3 text-center">
       <div class="col-6 col-md-3">
         <div class="trust-item">
-          <i class="bi bi-person-check-fill trust-icon"></i>
-          <span>Atención personalizada</span>
+          <div class="trust-number">+300</div>
+          <div class="trust-label">Bicicletas reparadas</div>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="trust-item">
-          <i class="bi bi-tag-fill trust-icon"></i>
-          <span>Precios claros</span>
+          <div class="trust-number">⭐ 5.0</div>
+          <div class="trust-label">Satisfacción de clientes</div>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="trust-item">
-          <i class="bi bi-shop-window trust-icon"></i>
-          <span>Taller físico</span>
+          <div class="trust-number"><i class="bi bi-shop-window"></i></div>
+          <div class="trust-label">Taller físico propio</div>
         </div>
       </div>
       <div class="col-6 col-md-3">
         <div class="trust-item">
-          <i class="bi bi-tools trust-icon"></i>
-          <span>Servicio especializado</span>
+          <div class="trust-number"><i class="bi bi-shield-check"></i></div>
+          <div class="trust-label">Diagnóstico honesto</div>
         </div>
       </div>
     </div>
@@ -407,83 +458,81 @@
     <div class="section-header text-center mb-5">
       <span class="section-label">Nuestro trabajo</span>
       <h2 class="section-title">Antes <span class="text-red">y después</span></h2>
-      <p class="section-sub">Cada bici que pasa por nuestro taller sale lista para rodar.</p>
+      <p class="section-sub">Presiona cualquier imagen para verla en detalle.</p>
     </div>
-    <div class="row g-3">
 
-      <!-- Foto 1 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-1.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-1.jpg</span>
+    <!-- Caso 1 -->
+    <div class="antes-despues-row mb-5">
+      <div class="row g-3 align-items-center">
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-antes">ANTES</span>
           </div>
-          <div class="gallery-label">Antes y después</div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-1.jpg" alt="Antes — caso 1" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-despues">DESPUÉS</span>
+          </div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-2.jpg" alt="Después — caso 1" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
         </div>
       </div>
-
-      <!-- Foto 2 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-2.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-2.jpg</span>
-          </div>
-          <div class="gallery-label">Antes y después</div>
-        </div>
-      </div>
-
-      <!-- Foto 3 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-3.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-3.jpg</span>
-          </div>
-          <div class="gallery-label">Antes y después</div>
-        </div>
-      </div>
-
-      <!-- Foto 4 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-4.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-4.jpg</span>
-          </div>
-          <div class="gallery-label">Antes y después</div>
-        </div>
-      </div>
-
-      <!-- Foto 5 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-5.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-5.jpg</span>
-          </div>
-          <div class="gallery-label">Antes y después</div>
-        </div>
-      </div>
-
-      <!-- Foto 6 -->
-      <div class="col-6 col-md-4">
-        <div class="gallery-item">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/antes-despues-6.jpg" ...> -->
-          <div class="gallery-placeholder">
-            <i class="bi bi-image"></i>
-            <span>antes-despues-6.jpg</span>
-          </div>
-          <div class="gallery-label">Antes y después</div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Caso 2 -->
+    <div class="antes-despues-row mb-5">
+      <div class="row g-3 align-items-center">
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-antes">ANTES</span>
+          </div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-3.jpg" alt="Antes — caso 2" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-despues">DESPUÉS</span>
+          </div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-4.jpg" alt="Después — caso 2" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Caso 3 -->
+    <div class="antes-despues-row mb-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-antes">ANTES</span>
+          </div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-5.jpg" alt="Antes — caso 3" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="ad-label-wrap">
+            <span class="ad-label ad-label-despues">DESPUÉS</span>
+          </div>
+          <div class="gallery-item" onclick="openLightbox(this)">
+            <img src="assets/images/antes-despues-6.jpg" alt="Después — caso 3" loading="lazy" />
+            <div class="gallery-zoom-hint"><i class="bi bi-zoom-in"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <p class="text-center mt-4">
       <a href="https://instagram.com/lasdosbicicletasspa" target="_blank" rel="noopener" class="ig-gallery-link">
         <i class="bi bi-instagram me-2"></i>Ver más trabajos en @lasdosbicicletasspa
@@ -491,6 +540,12 @@
     </p>
   </div>
 </section>
+
+<!-- ========== LIGHTBOX ========== -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+  <img id="lightbox-img" src="" alt="Imagen ampliada" />
+</div>
 
 <!-- ========== TESTIMONIOS ========== -->
 <section class="section-ldb section-gray py-6" id="testimonios">
@@ -505,36 +560,21 @@
       <!-- Pantallazo 1 -->
       <div class="col-sm-6 col-lg-4">
         <div class="screenshot-card">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-1.jpg" ...> -->
-          <div class="screenshot-placeholder">
-            <i class="bi bi-chat-left-text"></i>
-            <span>testimonio-1.jpg</span>
-            <small>Pantallazo de WhatsApp o Instagram</small>
-          </div>
+          <img src="assets/images/testimonio-1.jpg" alt="Cliente satisfecho — Las Dos Bicicletas" loading="lazy" />
         </div>
       </div>
 
       <!-- Pantallazo 2 -->
       <div class="col-sm-6 col-lg-4">
         <div class="screenshot-card">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-2.jpg" ...> -->
-          <div class="screenshot-placeholder">
-            <i class="bi bi-chat-left-text"></i>
-            <span>testimonio-2.jpg</span>
-            <small>Pantallazo de WhatsApp o Instagram</small>
-          </div>
+          <img src="assets/images/testimonio-2.jpg" alt="Cliente satisfecho — Las Dos Bicicletas" loading="lazy" />
         </div>
       </div>
 
       <!-- Pantallazo 3 -->
       <div class="col-sm-6 col-lg-4">
         <div class="screenshot-card">
-          <!-- Reemplaza el placeholder por: <img src="assets/images/testimonio-3.jpg" ...> -->
-          <div class="screenshot-placeholder">
-            <i class="bi bi-chat-left-text"></i>
-            <span>testimonio-3.jpg</span>
-            <small>Pantallazo de WhatsApp o Instagram</small>
-          </div>
+          <img src="assets/images/testimonio-3.jpg" alt="Cliente satisfecho — Las Dos Bicicletas" loading="lazy" />
         </div>
       </div>
 
@@ -607,6 +647,21 @@
   </div>
 </section>
 
+<!-- ========== CTA FINAL ========== -->
+<section class="cta-final-section py-6">
+  <div class="container">
+    <div class="cta-final-card text-center">
+      <div class="cta-final-icon mb-3"><i class="bi bi-bicycle"></i></div>
+      <h2 class="cta-final-title">¿Tu bicicleta necesita mantención?</h2>
+      <p class="cta-final-sub">Agenda por WhatsApp y recibe un diagnóstico inicial <strong>gratis</strong>.<br class="d-none d-md-block" />Te explicamos todo antes de trabajar. Sin sorpresas.</p>
+      <a href="https://wa.me/56998625113?text=Hola%2C%20quiero%20agendar%20una%20mantenci%C3%B3n%20y%20recibir%20un%20diagn%C3%B3stico%20gratis." target="_blank" rel="noopener" class="btn btn-primary-ldb btn-xl mt-2">
+        <i class="bi bi-whatsapp me-2"></i>Escribir ahora por WhatsApp
+      </a>
+      <p class="cta-final-note mt-3"><i class="bi bi-clock me-1"></i>Respondemos en menos de 1 hora en horario de atención</p>
+    </div>
+  </div>
+</section>
+
 <!-- ========== FOOTER ========== -->
 <footer class="footer-ldb py-5">
   <div class="container">
@@ -616,7 +671,7 @@
           <img src="assets/images/logo-footer.png" alt="Las Dos Bicicletas" class="footer-logo" />
           <span class="brand-text">Las Dos Bicicletas</span>
         </div>
-        <p class="footer-tagline">Taller especializado en mantención y reparación de bicicletas en La Cisterna.</p>
+        <p class="footer-tagline">Taller especializado en mantención y reparación de bicicletas en La Cisterna. Atención honesta, precios claros.</p>
       </div>
       <div class="col-md-4">
         <h5 class="footer-heading">Contacto</h5>
@@ -653,10 +708,13 @@
 </footer>
 
 <!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
-<a href="https://wa.me/56998625113?text=Hola%2C%20vi%20su%20web%20y%20quiero%20consultar%20sobre%20mis%20bicicleta." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
-  <i class="bi bi-whatsapp"></i>
-  <span class="wa-float-pulse"></span>
-</a>
+<div class="wa-float-wrapper">
+  <span class="wa-float-tooltip">¿Necesitas ayuda?</span>
+  <a href="https://wa.me/56998625113?text=Hola%2C%20vi%20su%20web%20y%20quiero%20consultar%20sobre%20mi%20bicicleta." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="wa-float-pulse"></span>
+  </a>
+</div>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
